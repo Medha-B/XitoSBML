@@ -30,6 +30,8 @@ public class CliRun implements Callable<Integer> {
 	String inputValue;
 	@Option(names = "-o", required = true, description = "The path to output XML file if input is image file")
 	String outputValue;
+	@Option(names = "-ds", description = "To show the domain hierarchy structure. False by default.")
+	boolean domStr;
 
 	/**
 	 * Checks whether the "inputValue" is the path to an image or a directory
@@ -45,7 +47,7 @@ public class CliRun implements Callable<Integer> {
 
 		if (!folder.isDirectory()) {
 			// The input is path to an image file and hence can be processed directly
-			cliMain.runCli(inputValue, outputValue);
+			cliMain.runCli(inputValue, outputValue, domStr);
 		} else {
 			// The input is path to a folder containing image files
 			for (final File fileEntry : folder.listFiles()) {
@@ -60,7 +62,7 @@ public class CliRun implements Callable<Integer> {
 
 						// Default naming convention for the output SBML models
 						String tempOut = temp.substring(0, temp.indexOf('.')) + "_output" + ".xml";
-						cliMain.runCli(temp, tempOut);
+						cliMain.runCli(temp, tempOut, domStr);
 
 					}
 
@@ -77,6 +79,7 @@ public class CliRun implements Callable<Integer> {
 	 * RunXitoSBML method for this file.
 	 */
 	public Integer call() {
+		// System.out.println(domStr);
 		File folder = new File(inputValue);
 		RunXitosbml(folder);
 
