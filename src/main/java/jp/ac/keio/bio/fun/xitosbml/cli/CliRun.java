@@ -48,7 +48,7 @@ public class CliRun implements Callable<Integer> {
 			if (folder.exists()) {
 				// System.out.println(folder);
 				String ext = inputValue.substring(inputValue.lastIndexOf('.') + 1);
-				System.out.println(ext);
+
 				if (ext.equals("tif") || ext.equals("tiff") || ext.equals("bmp") || ext.equals("dcm")
 						|| ext.equals("fits") || ext.equals("pdm") || ext.equals("gif") || ext.equals("jpeg")) {
 					cliMain.runCli(inputValue, outputValue);
