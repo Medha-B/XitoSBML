@@ -33,6 +33,7 @@ The main class is CliRun.java which implements XitoSBML_CLI. It allows the user 
 ```
 
 
+
 - For input image folder
 
 ```sh
