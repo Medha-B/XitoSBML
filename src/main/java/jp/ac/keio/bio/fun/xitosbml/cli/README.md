@@ -23,13 +23,15 @@ Instructions on:
 
 ### Running
 
-The main class is CliRun.java which implements XitoSBML_CLI. It allows the user to access desired input images by specifying the directory of the dataset (or the path of a single input image) through command line argument ``` -i ``` and obtain the resultant spatial SBML model at the location specified through the argument ``` -o ```. 
+The main class is CliRun.java which implements XitoSBML_CLI. It allows the user to access desired input images by specifying the directory of the dataset (or the path of a single input image) through command line argument ``` -i ``` and obtain the resultant spatial SBML models at the location specified through the argument ``` -o ```. 
+
 
 - For input image file
 
 ```sh
 % java -cp target/Xito_SBML-1.2.0-jar-with-dependencies.jar jp.ac.keio.bio.fun.xitosbml.cli.CliRun -i </path/to/image> -o </path/to/save/output/SBML/model>
 ```
+
 
 - For input image folder
 
