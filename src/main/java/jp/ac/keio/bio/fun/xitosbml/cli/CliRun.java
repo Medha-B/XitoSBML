@@ -30,7 +30,7 @@ public class CliRun implements Callable<Integer> {
 	String inputValue;
 	@Option(names = "-o", required = true, description = "The path to output XML file if input is image file")
 	String outputValue;
-	@Option(names = "-ds", description = "To show the domain hierarchy structure. False by default.")
+	@Option(names = "--ds", description = "To show the domain hierarchy structure. False by default.")
 	boolean domStr;
 
 	/**

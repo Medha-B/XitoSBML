@@ -226,3 +226,9 @@
 2020-08-09 00:59:25,177 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfDomainTypes []".
 2020-08-09 00:59:25,178 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfSampledFieldGeometrys []".
 2020-08-09 00:59:25,179 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfSampledFields []".
+2020-10-03 14:08:42,676 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfAdjacentDomains []".
+2020-10-03 14:08:42,678 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfCoordinateComponents []".
+2020-10-03 14:08:42,679 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfDomains []".
+2020-10-03 14:08:42,679 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfDomainTypes []".
+2020-10-03 14:08:42,680 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfSampledFieldGeometrys []".
+2020-10-03 14:08:42,680 ERROR o.s.j.e.s.SpatialModelPlugin [main] Trying to unregister something that does not have a spatial id: "listOfSampledFields []".
