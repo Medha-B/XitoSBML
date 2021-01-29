@@ -65,7 +65,6 @@ public class CliRun implements Callable<Integer> {
 						cliMain.runCli(temp, tempOut, domStr);
 
 					}
-
 				}
 
 			}
