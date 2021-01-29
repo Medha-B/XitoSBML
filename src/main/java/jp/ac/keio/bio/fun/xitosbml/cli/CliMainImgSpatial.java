@@ -88,7 +88,7 @@ public class CliMainImgSpatial {
 	 * @param imagePath  the path for obtaining input image
 	 * @param outputPath the path for saving the output SBML model
 	 */
-	public void runCli(String imagePath, String outputPath) {
+	public void runCli(String imagePath, String outputPath, boolean dom) {
 		// Creating an ImagePlus object from the specified image path
 		ImagePlus imager = new ImagePlus(imagePath);
 		this.imager = imager;
@@ -124,7 +124,9 @@ public class CliMainImgSpatial {
 			spImgPath = outputPath.substring(0, outputPath.indexOf('.'));
 		spImg.saveAsImage(spImgPath);
 
-		showDomainStructure();
+		if (dom == true) {
+			showDomainStructure();
+		}
 
 		print();
 		ModelValidator validator = new ModelValidator(document);
