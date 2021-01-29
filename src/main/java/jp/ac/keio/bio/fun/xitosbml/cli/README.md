@@ -13,6 +13,7 @@ Instructions on:
 ### Building
 ```sh
 % git clone https://github.com/Medha-B/XitoSBML.git
+% cd XitoSBML
 ```
 
 ### Compiling
